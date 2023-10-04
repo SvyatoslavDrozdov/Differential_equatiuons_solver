@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def Solver(coefficients, initial_condition, my_function, butcher_matrix, x_max, split_number):
+def solver(coefficients, initial_condition, my_function, butcher_matrix, x_max, split_number):
     A, B, G = butcher_matrix
 
     def f(position, y):

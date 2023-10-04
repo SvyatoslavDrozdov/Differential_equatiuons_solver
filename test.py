@@ -34,7 +34,7 @@ def my_function(coordinate):
     return np.sin(coordinate)
 
 
-solution = Solver(coefficients=coefficients, initial_condition=initial_condition, my_function=my_function,
+solution = solver(coefficients=coefficients, initial_condition=initial_condition, my_function=my_function,
                   butcher_matrix=butcher_matrix, x_max=x_max, split_number=split_number)
 X = np.linspace(0, x_max, split_number + 1)
 plt.plot(X, solution[:, 0])
